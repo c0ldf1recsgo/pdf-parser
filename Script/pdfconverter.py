@@ -25,6 +25,12 @@ import six  # Python 2+3 compatibility
 
 log = logging.getLogger(__name__)
 
+###
+#
+#   Convert HTML to txt and html
+#
+###
+
 ##  PDFLayoutAnalyzer
 ##
 class PDFLayoutAnalyzer(PDFTextDevice):
