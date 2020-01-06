@@ -1,3 +1,8 @@
+###
+#
+#   Make the file convertable
+#
+###
 from pdfminer.pdfinterp import PDFResourceManager, PDFPageInterpreter
 from pdfminer.layout import LAParams
 from pdfminer.pdfpage import PDFPage
@@ -22,13 +27,13 @@ def convert_pdf(path, format='text', codec='utf-8', password=''):
     for page in PDFPage.get_pages(fp, pagenos, maxpages=0, password=password,caching=True, check_extractable=True):
         interpreter.process_page(page)
     
-    text = retstr.getvalue().decode()
+    text = retstr.getvalue().decode() # Decode the retstr using the codec registered for encoding
     fp.close()
     device.close()
     retstr.close()
     return text
 
-def convertMultiple(pdfDir):
+def convertMultiple(pdfDir, password=''): # Convert all pdf file in folder with folder dir
     if pdfDir == "":
         pdfDir = os.getcwd() + "\\"
 
@@ -56,7 +61,7 @@ def convertMultiple(pdfDir):
             htmlFile.write('\t</body>\n</html>')
             htmlFile.close()
 
-def convertPDF(pdfName):
+def convertPDF(pdfName, password=''): # Convert all pdf file in folder with folder dir
     str = convert_pdf(pdfName, format='text')
     txtDir = pdfName + '.txt'
     txtDir = txtDir.replace('.pdf', '')
