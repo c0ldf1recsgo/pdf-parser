@@ -21,4 +21,3 @@ Check out the full documentation on
 ### 2. Next: run .sh file  
 - Make the sh file executable with command ```chmod +x run.sh```  
 - Run the script using ```./run.sh```
-# Contributing
