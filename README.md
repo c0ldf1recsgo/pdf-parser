@@ -1,4 +1,9 @@
 # pdf-parser
 ONLY support PDF version 1.5 or higher  
+# How to use  
+### 1. First: install pdfminer-six  
+- install  
+  ```pip install pdfminer.six```
+### 2. Next: run .sh file  
 - Make the sh file executable with command ```chmod +x run.sh```  
 - Run the script using ```./run.sh```
