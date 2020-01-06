@@ -1,12 +1,12 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'test.ui'
+# PDF Parser application
 #
 # Created by: PyQt5 UI code generator 5.12.3
 #
 # WARNING! All changes made in this file will be lost!
 #
-# Application author: Hoang Quoc Thinh (c0ldf1re)
+# Application author: Hoang Quoc Thinh (https://github.com/c0ldf1recsgo)
 
 from PyQt5 import QtCore, QtGui, QtWidgets
 import sys
